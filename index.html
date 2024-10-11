@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT or User?</title>
+    <title>ChatGPT or Marc?</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,6 +20,10 @@
             margin: 10px;
             cursor: pointer;
         }
+        .scoreboard {
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +33,12 @@
     <button class="button" onclick="guess('chatgpt')">ChatGPT</button>
     <button class="button" onclick="guess('user')">Marc</button>
     <p id="result"></p>
+
+    <div class="scoreboard">
+        <h2>Scoreboard</h2>
+        <p>Micha: 13 of 16</p>
+        <p>Marc: 9 of 16</p>
+    </div>
 
     <script>
         const sentences = [
