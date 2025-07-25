@@ -27,75 +27,8 @@
     </style>
 </head>
 <body>
-    <h1>ChatGPT or Marc?</h1>
-    <p>Can you guess who wrote this?</p>
-    <div class="sentence" id="sentence"></div>
-    <button class="button" onclick="guess('chatgpt')">ChatGPT</button>
-    <button class="button" onclick="guess('user')">Marc</button>
-    <p id="result"></p>
-
-    <div class="scoreboard">
-        <h2>Scoreboard</h2>
-        <p>Micha: 13 of 16</p>
-        <p>Marc: 9 of 16</p>
-    </div>
-
-    <script>
-        const sentences = [
-            { text: "The cat jumped over the fence gracefully.", author: "chatgpt" },
-            { text: "cat jump fens and do thing over there.", author: "user" },
-            { text: "I have completed my tasks for today efficiently.", author: "chatgpt" },
-            { text: "Task finsh today very good yes.", author: "user" },
-            { text: "The weather today is quite pleasant, isn't it?", author: "chatgpt" },
-            { text: "Today weather nice, you see it?", author: "user" },
-            { text: "The quick brown fox jumps over the lazy dog.", author: "chatgpt" },
-            { text: "Fox jump over dog quick.", author: "user" },
-            { text: "I would like to schedule a meeting for next week.", author: "chatgpt" },
-            { text: "Next week we meet, yes schedule it.", author: "user" },
-            { text: "She enjoys reading books during her free time.", author: "chatgpt" },
-            { text: "She like book read when free time have.", author: "user" },
-            { text: "Please make sure to complete the assignment on time.", author: "chatgpt" },
-            { text: "Complete assignment time, make sure yes.", author: "user" },
-            { text: "The flowers in the garden are blooming beautifully.", author: "chatgpt" },
-            { text: "Garden flower bloom good, very nice.", author: "user" }
-        ];
-
-        let currentSentenceIndex = 0;
-        let correctGuesses = 0;
-        let totalGuesses = 0;
-
-        function displaySentence() {
-            const sentenceElement = document.getElementById("sentence");
-            sentenceElement.textContent = sentences[currentSentenceIndex].text;
-            document.getElementById("result").textContent = "";
-        }
-
-        function guess(choice) {
-            const correctAuthor = sentences[currentSentenceIndex].author;
-            const resultElement = document.getElementById("result");
-
-            if (choice === correctAuthor) {
-                resultElement.textContent = "Correct! You guessed right.";
-                correctGuesses++;
-            } else {
-                resultElement.textContent = "Oops! That was incorrect.";
-            }
-
-            totalGuesses++;
-            currentSentenceIndex = (currentSentenceIndex + 1) % sentences.length;
-            setTimeout(displaySentence, 2000);
-
-            if (totalGuesses === sentences.length) {
-                setTimeout(() => {
-                    alert(`Game over! You got ${correctGuesses} out of ${totalGuesses} correct.`);
-                    correctGuesses = 0;
-                    totalGuesses = 0;
-                }, 2000);
-            }
-        }
-
-        // Display the first sentence initially
-        displaySentence();
-    </script>
+    <a href="https://staging3.truffls.de/stellenangebote/10030694-p-werkstudent-w-m-d-im-betrieblichen-gesundheitsmanagement-bgm">
+        Test Werbung
+    </a>
 </body>
 </html>
